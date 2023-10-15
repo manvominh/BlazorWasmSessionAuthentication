@@ -9,15 +9,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{0F90A562-A8D8-4E8F-8131-94BB6872CDC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWasmSessionAuthentication.Application", "BlazorWasmSessionAuthentication.Application\BlazorWasmSessionAuthentication.Application.csproj", "{F2BCB354-AE1E-43EF-A6AF-A6BE2448DBF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWasmSessionAuthentication.Application", "BlazorWasmSessionAuthentication.Application\BlazorWasmSessionAuthentication.Application.csproj", "{F2BCB354-AE1E-43EF-A6AF-A6BE2448DBF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWasmSessionAuthentication.Domain", "BlazorWasmSessionAuthentication.Domain\BlazorWasmSessionAuthentication.Domain.csproj", "{0A9C10D0-6A45-4EBF-B3D0-901D7E54642B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWasmSessionAuthentication.Domain", "BlazorWasmSessionAuthentication.Domain\BlazorWasmSessionAuthentication.Domain.csproj", "{0A9C10D0-6A45-4EBF-B3D0-901D7E54642B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWasmSessionAuthentication.Persistence", "BlazorWasmSessionAuthentication.Persistence\BlazorWasmSessionAuthentication.Persistence.csproj", "{AC5430A3-7F91-4B6D-9862-965FA79B791C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWasmSessionAuthentication.Persistence", "BlazorWasmSessionAuthentication.Persistence\BlazorWasmSessionAuthentication.Persistence.csproj", "{AC5430A3-7F91-4B6D-9862-965FA79B791C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWasmSessionAuthentication.API", "BlazorWasmSessionAuthentication.API\BlazorWasmSessionAuthentication.API.csproj", "{19397F24-FB6E-48FF-A850-2549B5D80BAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWasmSessionAuthentication.API", "BlazorWasmSessionAuthentication.API\BlazorWasmSessionAuthentication.API.csproj", "{19397F24-FB6E-48FF-A850-2549B5D80BAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWasmSessionAuthentication.WebUI", "BlazorWasmSessionAuthentication.WebUI\BlazorWasmSessionAuthentication.WebUI.csproj", "{2FF3B7FF-331B-496A-B0D7-B49A3A835A76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWasmSessionAuthentication.WebUI", "BlazorWasmSessionAuthentication.WebUI\BlazorWasmSessionAuthentication.WebUI.csproj", "{2FF3B7FF-331B-496A-B0D7-B49A3A835A76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

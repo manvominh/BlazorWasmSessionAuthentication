@@ -1,6 +1,11 @@
 ﻿@page "/fetchdata"
-@inject HttpClient Http
 
+@inject HttpClient Http
+@attribute [Authorize(Roles = "Administrator")]
+@using BlazorWasmSessionAuthentication.WebUI.Authentication
+@using System.Net.Http.Headers
+@inject AuthenticationStateProvider authenticationStateProvider
+@inject NavigationManager navManager
 <PageTitle>Weather forecast</PageTitle>
 
 <h1>Weather forecast</h1>
@@ -41,7 +46,17 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("WeatherForecast");
+        var customAuthStateProvider = (CustomAuthenticationStateProvider)authenticationStateProvider;
+        var token = await customAuthStateProvider.GetToken();
+        if (!string.IsNullOrWhiteSpace(token))
+        {
+            Http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", token);
+            forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("WeatherForecast");
+        }
+        else
+            navManager.NavigateTo("/login");
+
+        //forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("WeatherForecast");
     }
 
     public class WeatherForecast
